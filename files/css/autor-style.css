@@ -1,0 +1,147 @@
+/*内容样式*/
+body > #main #content p {
+	margin: 0 0 20px;
+	text-indent:2em;
+}
+body > #main #content h1 {
+	font-size: 32px;
+	line-height: 2em;
+	margin: 0 -60px 20px;
+	padding: 0 60px;
+	border-bottom: 2px solid #ddd;
+	font-weight: bold;
+}
+body > #main #content h2 {
+	font-size: 22px;
+	line-height: 36px;
+	margin: 0 -60px 20px;
+	padding: 0 60px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #DDD;
+	color: #333;
+	font-weight: bold;
+}
+body > #main #content h3 {
+	font-size: 18px;
+	line-height: 28px;
+	margin: 0 -60px 20px;
+	padding: 0 60px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #F3F3F3;
+	font-weight: bold;
+}
+body > #main #content h4 {
+	font-size: 18px;
+	line-height: 1.8em;
+	margin: 0 0 20px;
+	border-bottom: 2px solid #ddd;
+}
+body > #main #content h5 {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.8em;
+	margin: 0 0 20px;
+	color: #666;
+}
+body > #main #content h6 {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.6em;
+	margin: 0 0 20px;
+	color: #999;
+}
+body > #main #content ul,
+body > #main #content ol {
+	margin: 0 0 20px;
+}
+body > #main #content ul ul,
+body > #main #content ol ul,
+body > #main #content ul ol,
+body > #main #content ol ol {
+	margin: 10px 0;
+}
+body > #main #content ul li,
+body > #main #content ol li {
+	margin: 0px;
+	/*margin: 0 0 10px;*/
+}
+pre {
+	display: block;
+	overflow-x: auto;
+	margin: 0 -60px 20px;
+	padding: 0 60px;
+	word-wrap: break-word;
+	word-break: normal;
+	color: #f8f8f2;
+	background: #23241f;
+	-webkit-text-size-adjust: none;
+}
+pre code {
+	font-size: 16px;
+	display: block;
+	margin: 0;
+	padding: 15px 15px;
+	border-left: 2px solid #666;
+}
+pre code .code-line {
+	position: relative;
+	min-height: 1.8em;
+}
+pre code .code-line .line-num {
+	position: absolute;
+	left: -77px;
+	width: 60px;
+	height: 100%;
+	padding: 0 5px;
+	text-align: right;
+	color: #666;
+}
+body > #main #content .img-box {
+	margin: 0 -60px 20px;
+	padding: 0;
+}
+body > #main #content .img-box img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+body > #main #content blockquote,
+body > #main #content blockquote > blockquote>blockquote,
+body > #main #content blockquote > blockquote > blockquote > blockquote>blockquote {
+	margin: 0 0 20px;
+	border-left: 5px solid #dddde3;
+	background: #f6f6f6;
+}
+body > #main #content blockquote > blockquote,
+body > #main #content blockquote > blockquote > blockquote>blockquote {
+	background: #fff;
+}
+body > #main #content blockquote *:last-child {
+	margin-bottom: 0;
+}
+body > #main #content table {
+	margin: 0 auto 20px;
+	border: 2px solid #ddd;
+}
+body > #main #content table td,
+body > #main #content table th {
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+}
+body > #main #content table th {
+	background-color: #efefef;
+}
+
+
+
+
+
+
+
+
+
