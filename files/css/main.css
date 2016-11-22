@@ -244,3 +244,11 @@ body > #footer a:hover {
 #toc .toc-active a {
 	color: #fff;
 }
+
+
+/*------------内容样式自定义-----------*/
+
+
+body > #main #content h2 {
+	border-bottom: 1px solid #ccc;
+}

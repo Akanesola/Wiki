@@ -1,18 +1,20 @@
 # 文章目录
+<div style="color: #666;font-size: .8em;">*Tips：使用浏览器搜索`Ctrl+F`进行关键词查找.*</div>
 
-<p style="font-size: 24px;font-weight: bold;text-indent: 0;">设计</p>
-<hr />
-* [交互设计]()    
-* [UI设计]()    
-* [平面设计]()    
-* [产品设计]()    
+## 设计
+* [WEB版式设计](web)
 
-<p style="font-size: 24px;font-weight: bold;text-indent: 0;">技术</p>
-<hr />
-* [前端]()  
-* [CGI]()     
-* [SEO]()  
+## 技术
+* [Hexo使用经验](Hexo)
 
-<hr />
-[说明文档](readme)
+## 生活
+* [测试。。。](web)
+
+## 杂谈
+* [测试。。。](web)
+
+## 收藏夹
+* [测试。。。](web)
+
+
 
