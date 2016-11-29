@@ -1,20 +1,12 @@
+[TOC]
 # 文章目录
 <div style="color: #666;font-size: .8em;">*Tips：使用浏览器搜索`Ctrl+F`进行关键词查找.*</div>
 
-## 设计
-* [WEB版式设计](web)
+## Markdown语法
+* [快速入门](markdown语法:Markdown_basics)
+* [语法说明](markdown语法:Markdown_syntax)
 
-## 技术
-* [Hexo使用经验](Hexo)
 
-## 生活
-* [测试。。。](web)
-
-## 杂谈
-* [测试。。。](web)
-
-## 收藏夹
-* [测试。。。](web)
 
 
 

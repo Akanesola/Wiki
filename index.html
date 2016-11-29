@@ -6,20 +6,19 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Wiki Of LIng</title>
-		<!-- Bootstrap -->
-		<link href="files/css/bootstrap.min.css" rel="stylesheet">
-		<!-- 代码高亮样式，可以根据需求设置，files/css 文件夹内有 54 种样式可选 -->
-		<link href="files/css/monokai_sublime.css" rel="stylesheet">
-		<!-- 内容样式，可通过自定义此文件修改内容显示效果(files/css/目录下预置多种样式可供替换) -->
-		<link href="files/css/github.css" rel="stylesheet">
+
 		<!-- 主样式，可通过自定义此文件修改页面样式 -->
 		<link href="files/css/main.css" rel="stylesheet">
+		<!-- hightlight样式三种 default.css github.css monokai_sublime.css 获取更多：https://highlightjs.org/-->
+		<link href="files/css/github.css" rel="stylesheet">
+		<!-- Markdown样式设置 -->
+		<link href="files/css/github-markdown.css" rel="stylesheet">
 		<!-- jQuery -->
 		<script src="files/js/jquery.min.js"></script>
 		<!-- Markdown 转换插件 -->
 		<script src="files/js/marked.js"></script>
 		<!-- 代码高亮插件 -->
-		<script src="files/js/highlight.js"></script>
+		<script src="files/js/highlight.pack.js"></script>
 		<!-- TOC 自动目录 -->
 		<script src="files/js/toc.js"></script>
 		<script>
@@ -57,8 +56,7 @@
 			}
 			// 调整元素尺寸函数
 			function resize_dom(){
-				tb_width = $("#content").width() + 70;
-				$("#toc-box").css("width",tb_width);
+
 				t_height = $("#toc").height();
 				if(t_height > (($(window).height()*0.8)-10)){
 					$("#toc").css("height",(($(window).height()*0.8)-10));
@@ -79,7 +77,7 @@
 					return '<div class="img-box"><img src="'+href+'" alt="'+text+'" /></div>';
 				};
 				renderer.link = function(href, title, text){	// 设置 Markdown 转换时链接的代码
-					var reg = new RegExp("^[\\w\\-\\:]+$");	// 验证命名域
+					var reg = new RegExp("^[\\W\\w\\-\\:]+$");	// 验证命名域
 					if(reg.test(href)){
 						return '<a href="index.html?name='+href+'" title="'+text+'">'+text+'</a>';
 					}else if(title == "def"){
@@ -107,7 +105,7 @@
 					success:function(markdownString){
 						// 将转换好的内容写入页面
 						$("#content").html(function(){
-							return marked(markdownString,{ renderer: renderer,gfm: true,tables: true,breaks: false,pedantic: false,sanitize: false,smartLists: true,smartypants: false }).replace(/<p>\[TOC]<\/p>/i,'<div id="toc-box"><div class="menu"></div><div id="toc"></div></div>').replace(/<p><div/ig,'<div').replace(/<\/div><\/p>/ig,'</div>');
+							return marked(markdownString,{ renderer: renderer,gfm: true,tables: true,breaks: true,pedantic: false,sanitize: false,smartLists: true,smartypants: false }).replace(/<p>\[TOC]<\/p>/i,'<div id="toc-box"><div class="menu" title="目录"></div><div id="toc"></div></div>').replace(/<p><div/ig,'<div').replace(/<\/div><\/p>/ig,'</div>');
 						});
 						// 代码高亮加行号
 						$('pre code').each(function(){
@@ -168,17 +166,17 @@
 			<h1><a href="index.html">My Wiki</a></h1>
 			<div class="navlist">
 				<ul>
-					<li><a id="homepage" class="dqpage" href="./index.html" title="My Wiki">主页</a></li>
-					<li><a href="http://akanesola.coding.me/home" title="欣赏我的作品" target="_blank">作品</a></li>
-					<li><a href="https://akanesola.github.io" title="浏览我的博客" target="_blank">博客</a></li>
-					<li><a id="about" href="./index.html?name=about" title="了解我，联系我">关于</a></li>
+					<li><a href="./index.html" title="My Wiki">主页</a></li>
+					<li><a href="#" title="欣赏我的作品" target="_blank">作品</a></li>
+					<li><a href="#" title="浏览我的博客" target="_blank">博客</a></li>
+					<li><a href="./index.html?name=about" title="了解我，联系我">关于</a></li>
 				</ul>
 			</div>
 		</div> <!-- #header End -->
 		<div id="main" class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
-					<div id="content">
+					<div id="content" class="markdown-body">
 						Loading……
 					</div>
 				</div>
