@@ -20,11 +20,7 @@
      </ul>
 </div>
 ```
-## 联系我
 
-* Email：ling2014abc@gmail.com
-* [个人主页](http://akanesola.coding.me/home)
-* [个人博客](https://akanesola.github.io)
 
 ---
 
